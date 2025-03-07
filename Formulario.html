@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
 </head>
+
 <body>
     <h2>Formulário de Cadastro</h2>
     <form action="https://www.w3schools.com/action_page.php" method="post">
-        
+
         <label for="data">Data:</label>
         <input type="date" id="data" name="data" required><br><br>
-        
+
         <h3>Dados de Acesso</h3>
         <label for="usuario">Usuário:</label>
         <input type="text" id="usuario" name="usuario" required><br>
-        
+
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required><br><br>
-        
+
         <h3>Dados Pessoais</h3>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br>
-        
+
         <label for="endereco">Endereço:</label>
         <input type="text" id="endereco" name="endereco" required><br>
-        
+
         <label for="numero">Número:</label>
         <input type="number" id="numero" name="numero" required><br>
-        
+
         <label for="complemento">Complemento:</label>
         <input type="text" id="complemento" name="complemento"><br>
-        
+
         <label for="cidade">Cidade:</label>
         <input list="cidades" name="cidade" id="cidade">
         <datalist id="cidades">
             <option value="São Paulo">
+            <option value="Campinas">
+            <option value="Santos">
             <option value="Sorocaba">
-            <option value="itu">
-            <option value="Piracicaba">
-            <option value="Lins">
+            <option value="São Bernardo do Campo">
+    
+            <option value="Rio de Janeiro">
+            <option value="Niterói">
+            <option value="Campos dos Goytacazes">
+            <option value="Petrópolis">
+            <option value="Duque de Caxias">
+
+            <option value="Belo Horizonte">
+            <option value="Uberlândia">
+            <option value="Juiz de Fora">
+            <option value="Contagem">
+            <option value="Montes Claros">
+
+            <option value="Curitiba">
+            <option value="Londrina">
+            <option value="Maringá">
+            <option value="Ponta Grossa">
+            <option value="Cascavel">
+                
+            <option value="Porto Alegre">
+            <option value="Caxias do Sul">
+            <option value="Pelotas">
+            <option value="Santa Maria">
+            <option value="Passo Fundo">
         </datalist><br>
-        
+
         <label for="estado">Estado:</label>
         <select id="estado" name="estado">
             <option value="SP">São Paulo</option>
@@ -49,45 +75,48 @@
             <option value="MG">Minas Gerais</option>
             <option value="PR">Paraná</option>
             <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
         </select><br>
-        
+
         <label for="cep">CEP:</label>
         <input type="text" id="cep" name="cep" required><br><br>
-        
+
         <h3>Gênero</h3>
         <input type="radio" id="masculino" name="genero" value="Masculino">
         <label for="masculino">Masculino</label><br>
-        
+
         <input type="radio" id="feminino" name="genero" value="Feminino">
         <label for="feminino">Feminino</label><br>
-        
+
         <input type="radio" id="nao_informar" name="genero" value="Prefiro não falar">
         <label for="nao_informar">Prefiro não falar</label><br><br>
-        
+
         <h3>Curso</h3>
         <input type="checkbox" id="ads" name="curso" value="ADS">
         <label for="ads">ADS</label><br>
-        
+
         <input type="checkbox" id="jogos" name="curso" value="Jogos">
         <label for="jogos">Jogos</label><br>
-        
+
         <input type="checkbox" id="gestao_ti" name="curso" value="Gestão de TI">
         <label for="gestao_ti">Gestão de TI</label><br>
-        
+
         <input type="checkbox" id="banco_dados" name="curso" value="Banco de Dados">
         <label for="banco_dados">Banco de Dados</label><br><br>
-        
+
         <h3>Modelo</h3>
         <input type="radio" id="presencial" name="modelo" value="Presencial">
         <label for="presencial">Presencial</label><br>
-        
+
         <input type="radio" id="ead" name="modelo" value="EAD">
         <label for="ead">EAD</label><br>
-        
+
         <input type="radio" id="semi_presencial" name="modelo" value="Semi presencial">
         <label for="semi_presencial">Semi presencial</label><br><br>
-        
+
         <input type="submit" value="Enviar">
     </form>
 </body>
+
 </html>
